@@ -1,0 +1,14 @@
+{
+  "name": "auar_task_one",
+  "version": "1.0.0",
+  "description": "Auar Task One",
+  "main": "index.js",
+  "scripts": {
+    "start-alarm-server": "node ./src/alarm-server/index.js"
+  },
+  "author": "April Bates",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}
