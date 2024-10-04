@@ -3,12 +3,21 @@
   "version": "1.0.0",
   "description": "Auar Task One",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start-alarm-server": "node ./src/alarm-server/index.js"
+    "start-alarm-server": "node ./src/alarm-server/index.js",
+    "start-sleepy-human-server": "node ./src/sleepy-human-server/index.js"
   },
   "author": "April Bates",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.21.0"
+    "body-parser": "^1.20.3",
+    "express": "^4.21.0",
+    "kafkajs": "^2.2.4"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.11.1",
+    "eslint": "^9.11.1",
+    "globals": "^15.9.0"
   }
 }
