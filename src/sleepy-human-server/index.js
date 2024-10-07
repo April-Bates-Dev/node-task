@@ -10,7 +10,9 @@ const humanConsumer = await getConsumerWithSubscription(
 await humanConsumer.run({
   eachMessage: async ({ message: message }) => {
     const value = message.value.toString();
+    if (value === "wake_up") {
+      sendMessageToAlarm();
+    }
     console.log("🙋‍♂️ The sleepy human has received a message : ", value);
-    if (value === "wake_up") sendMessageToAlarm();
   },
 });
